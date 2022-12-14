@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+  <script src="assets/javascript/main.js"></script>
+  <script src="assets/javascript/slick.js"></script>
+  <title>Main page</title>
+</head>
+
+<body>
+
+  <div class="header-box">
+    <div class="container">
+      <header class="header">
+        <a class="logo-link" href="#">
+          <div class="logo-box">
+            <img class="logo" src="assets/images/logo.svg" alt="Logo">
+            <span class="tagline">Школа программирования</span>
+          </div>
+        </a>
+
+        <nav class="menu">
+          <div class="container">
+            <div class="menu-flexbox">
+              <ul class="menu-list w60">
+                <li class="menu-item with-submenu">
+                  <a href="#" class="menu-link">Курсы</a>
+                  <ul class="submenu">
+                    <li><a href="#">Python Django</a></li>
+                    <li><a href="#">JS</a></li>
+                    <li><a href="#">Ruby on Rails</a></li>
+                    <li><a href="#">English</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="menu-list">
+                <li class="menu-item"><a href="#" class="menu-link">Трудоустройство</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Блог</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Контакты</a></li>
+
+                <li class="menu-item hide"><a href="#" class="menu-link">О школе</a></li>
+                <li class="menu-item hide"><a href="#" class="menu-link">Работодатели</a></li>
+                <li class="menu-item hide"><a href="#" class="menu-link">Отывы</a></li>
+                <li class="menu-item hide"><a href="#" class="menu-link">Наши студенты</a></li>
+                <li class="menu-item hide"><a href="#" class="menu-link">FAQ</a></li>
+                <li class="menu-item hide"><a href="#" class="menu-link">Финансирования</a></li>
+
+                <li class="menu-item"><a href="#" class="menu-link recall"></a></li>
+
+                <li class="menu-item hamburger-button">
+                  <button class="hamburger hamburger--squeeze" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+        </nav>
+      </header>
+    </div>
+  </div>
+
+  <div class="first-screeen-carousel">
+    <div class="carousel-body">
+
+      <div class="first-screen-block gradient gradient-red" style="background-image: url(assets/images/bg-image-1.png)">
+        <div class="first-screen-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10">
+                <h1 class="super-big-title">Ruby on Rails</h1>
+                <p class="description">Универсальный язык и популярный веб-фреймворк</p>
+                <div class="additional">
+                  <div class="info launch">Старт: 12 Янв. 2019</div>
+                  <div class="info cost">25 000 тг/мес</div>
+                </div>
+                <a class="button dots" href="#">Записаться</a>
+              </div>
+              <div class="col-md-2">
+                <div class="next-course-block">
+                  <span class="next-course link-to-course"><span class="half-opacity">Python: Django</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="first-screen-block gradient gradient-blue"
+        style="background-image: url(assets/images/bg-image-python.jpg)">
+        <div class="first-screen-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10">
+                <h1 class="super-big-title">Python: Django</h1>
+                <p class="description">Универсальный язык и популярный веб-фреймворк</p>
+                <div class="additional">
+                  <div class="info launch">Старт: 12 Янв. 2019</div>
+                  <div class="info cost">25 000 тг/мес</div>
+                </div>
+                <a class="button dots" href="#">Записаться</a>
+              </div>
+              <div class="col-md-2">
+                <div class="next-course-block">
+                  <span class="next-course link-to-course"><span class="half-opacity">Java Script</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="first-screen-block gradient gradient-yellow"
+        style="background-image: url(assets/images/bg-image-js.jpg)">
+        <div class="first-screen-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10">
+                <h1 class="super-big-title">Java Script</h1>
+                <p class="description">Универсальный язык и популярный веб-фреймворк</p>
+                <div class="additional">
+                  <div class="info launch">Старт: 12 Янв. 2019</div>
+                  <div class="info cost">25 000 тг/мес</div>
+                </div>
+                <a class="button dots" href="#">Записаться</a>
+              </div>
+              <div class="col-md-2">
+                <div class="next-course-block">
+                  <span class="next-course link-to-course"><span class="half-opacity">English</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="first-screen-block gradient gradient-blue-to-red"
+        style="background-image: url(assets/images/bg-image-english.jpg)">
+        <div class="first-screen-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10">
+                <h1 class="super-big-title">English</h1>
+                <p class="description">Универсальный язык и популярный веб-фреймворк</p>
+                <div class="additional">
+                  <div class="info launch">Старт: 12 Янв. 2019</div>
+                  <div class="info cost">25 000 тг/мес</div>
+                </div>
+                <a class="button dots" href="#">Записаться</a>
+              </div>
+              <div class="col-md-2">
+                <div class="next-course-block">
+                  <span class="next-course link-to-course"><span class="half-opacity">Ruby on Rails</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="first-screen-control">
+      <div class="container">
+        <div class="controls">
+          <div class="left">
+            <a href="#first-block" class="link-to-bottom">Крути вниз</a>
+          </div>
+
+          <div class="center">
+            <div class="slides-control">
+            </div>
+          </div>
+          <div class="right">
+            <ul class="language-selector">
+              <li class="language">АНГЛ</li>
+              <li class="language active">РУС</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="first-screen-bottom red"></div>
+  </div>
+
+  <div class="container" id="first-block">
+    <div class="courses">
+      <div class="centered">
+        <h1 class="big-title">Мы обучаем</h1>
+        <h4 class="subtitle">Наши курсы постоянно дополняются актуальной информацией.</h4>
+      </div>
+
+      <div class="courses-body">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="course">
+              <span class="logo" style="background-image: url(assets/images/javascript-logo.svg);"></span>
+
+              <h3 class="title">Java Script</h3>
+
+              <p class="description">Growing up in Michigan, I was lucky enough to experience one part of the Great
+                Lakes. And let me assure
+                you, they are great. As a photojournalist, </p>
+
+              <div class="course-info">
+                <div class="info launch">
+                  <h3 class="of">Старт:</h3>
+                  <span class="is">12 Янв. 2019</span>
+                </div>
+
+                <div class="info term">
+                  <h3 class="of">Срок:</h3>
+                  <span class="is">6 месяцев</span>
+                </div>
+              </div>
+
+              <div class="button-place">
+                <a class="button yellow" href="#">Записаться</a>
+              </div>
+
+              <div class="price-place">
+                <span class="price"><span class="amount">25 000</span> тг/мес</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="course">
+              <span class="logo" style="background-image: url(assets/images/rails-logo.svg);"></span>
+
+              <h3 class="title">Ruby on Rails</h3>
+
+              <p class="description">Growing up in Michigan, I was lucky enough to experience one part of the Great
+                Lakes. And let me assure
+                you, they are great. As a photojournalist, </p>
+
+              <div class="course-info">
+                <div class="info launch">
+                  <h3 class="of">Старт:</h3>
+                  <span class="is">12 Янв. 2019</span>
+                </div>
+
+                <div class="info term">
+                  <h3 class="of">Срок:</h3>
+                  <span class="is">6 месяцев</span>
+                </div>
+              </div>
+
+              <div class="button-place">
+                <a class="button yellow" href="#">Записаться</a>
+              </div>
+
+              <div class="price-place">
+                <span class="price"><span class="amount">40 000</span> тг/мес</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="course">
+              <span class="logo" style="background-image: url(assets/images/django-logo.svg);"></span>
+
+              <h3 class="title">Python Django</h3>
+
+              <p class="description">Growing up in Michigan, I was lucky enough to experience one part of the Great
+                Lakes. And let me assure
+                you, they are great. As a photojournalist, </p>
+
+              <div class="course-info">
+                <div class="info launch">
+                  <h3 class="of">Старт:</h3>
+                  <span class="is">12 Янв. 2019</span>
+                </div>
+
+                <div class="info term">
+                  <h3 class="of">Срок:</h3>
+                  <span class="is">6 месяцев</span>
+                </div>
+              </div>
+
+              <div class="button-place">
+                <a class="button yellow" href="#">Записаться</a>
+              </div>
+
+              <div class="price-place">
+                <span class="price"><span class="amount">35 000</span> тг/мес</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="course">
+              <span class="logo" style="background-image: url(assets/images/english-logo.svg);"></span>
+
+              <h3 class="title">English</h3>
+
+              <p class="description">Growing up in Michigan, I was lucky enough to experience one part of the Great
+                Lakes. And let me assure
+                you, they are great. As a photojournalist, </p>
+
+              <div class="course-info">
+                <div class="info launch">
+                  <h3 class="of">Старт:</h3>
+                  <span class="is">12 Янв. 2019</span>
+                </div>
+
+                <div class="info term">
+                  <h3 class="of">Срок:</h3>
+                  <span class="is">6 месяцев</span>
+                </div>
+              </div>
+
+              <div class="button-place">
+                <a class="button yellow" href="#">Записаться</a>
+              </div>
+
+              <div class="price-place">
+                <span class="price"><span class="amount">25 000</span> тг/мес</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="advantages">
+      <div class="advantages-head">
+        <h1 class="big-title">Преимущества</h1>
+        <h4 class="subtitle">Наши курсы постоянно дополняются актуальной информацией.</h4>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="advantage">
+            <img class="advantage-logo" src="assets/images/advantage-1.svg" alt="ss">
+            <h3 class="advantage-title">Действующие практики</h3>
+            <p class="advantage-description">Most people who work in an office environment, buy computer products, or
+              have a c</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="advantage">
+            <img class="advantage-logo" src="assets/images/advantage-3.svg" alt="ss">
+            <h3 class="advantage-title">Offline/Online обучение</h3>
+            <p class="advantage-description">Most people who work in an office environment, buy computer products, or
+              have a c</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="advantage">
+            <img class="advantage-logo" src="assets/images/advantage-2.svg" alt="ss">
+            <h3 class="advantage-title">Offline/Online обучение</h3>
+            <p class="advantage-description">Most people who work in an office environment, buy computer products, or
+              have a c</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="advantage">
+            <img class="advantage-logo" src="assets/images/advantage-4.svg" alt="ss">
+            <h3 class="advantage-title">Индивидуальный подход</h3>
+            <p class="advantage-description">Most people who work in an office environment, buy computer products, or
+              have a c</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="advantage">
+            <img class="advantage-logo" src="assets/images/advantage-5.svg" alt="ss">
+            <h3 class="advantage-title">Soft skills</h3>
+            <p class="advantage-description">Most people who work in an office environment, buy computer products, or
+              have a c</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="advantage">
+            <img class="advantage-logo" src="assets/images/advantage-1.svg" alt="ss">
+            <h3 class="advantage-title">Действующие практики</h3>
+            <p class="advantage-description">Most people who work in an office environment, buy computer products, or
+              have a c</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+  <div class="lead-form-box">
+    <div class="container">
+      <div class="lead-form-head">
+        <h1 class="big-title">Бесплатная консультация</h1>
+        <h4 class="subtitle">Оставьте свои контактные данные, и мы свяжемся с вами в течение 10 минут!</h4>
+      </div>
+
+      <div class="lead-form-body">
+        <form class="lead-form" action="/leads">
+          <div class="row">
+            <div class="col-12 col-sm-4 col-md-4">
+              <div class="input-group">
+                <input class="input" type="text" placeholder="Имя">
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-4">
+              <div class="input-group">
+                <input class="input" type="email" placeholder="E-mail">
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-4">
+              <div class="input-group">
+                <button class="button" type="submit">Записаться</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="schedule-box">
+    <div class="container">
+      <div class="schedule-head">
+        <h1 class="big-title">Расписание</h1>
+        <h4 class="subtitle">Наши курсы постоянно дополняются актуальной информацией.</h4>
+      </div>
+    </div>
+
+    <div class="container container-disable-on-mobile">
+      <div class="courses-shedule">
+
+        <div class="course">
+          <div class="preview-box">
+            <div class="container">
+              <div class="course-preview">
+                <span class="logo" style="background-image: url(assets/images/rails-logo.svg);"></span>
+                <h3 class="title">Rubie on Rails</h3>
+                <span class="opening-arrow"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="course-information">
+              <div class="course-info annotation">
+                <span class="annotate start">Дата начала</span>
+                <span class="annotate shedule">Расписание</span>
+                <span class="annotate cost">Стоимость</span>
+                <span class="annotate commit">Регистарция</span>
+              </div>
+
+              <div class="course-info">
+                <div class="info start">
+                  <span class="annotate">Дата начала</span>
+                  <span>12.12.2018</span>
+                </div>
+                <div class="info cost">
+                  <span class="annotate">Стоимость</span>
+                  <span><span class="price">25 000</span> тг/мес</span>
+                </div>
+                <div class="info shedule">
+                  <span class="annotate">Расписание</span>
+                  <div class="timetable-info">
+                    <span class="duration">6 месяцев</span>
+                    <span class="by-days">Вт, Чт 21:00-23:00</span>
+                  </div>
+                </div>
+
+                <a href="#" class="button yellow commit">Записаться</a>
+              </div>
+
+              <div class="course-info">
+                <div class="info start">
+                  <span class="annotate">Дата начала</span>
+                  <span>12.12.2018</span>
+                </div>
+                <div class="info cost">
+                  <span class="annotate">Стоимость</span>
+                  <span><span class="price">25 000</span> тг/мес</span>
+                </div>
+                <div class="info shedule">
+                  <span class="annotate">Расписание</span>
+                  <div class="timetable-info">
+                    <span class="duration">6 месяцев</span>
+                    <span class="by-days">Вт, Чт 21:00-23:00</span>
+                  </div>
+                </div>
+
+                <a href="#" class="button yellow commit">Записаться</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course opened">
+          <div class="preview-box">
+            <div class="container">
+              <div class="course-preview">
+                <span class="logo" style="background-image: url(assets/images/javascript-logo.svg);"></span>
+                <h3 class="title">Java Script</h3>
+                <span class="opening-arrow"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="course-information">
+              <div class="course-info annotation">
+                <span class="annotate start">Дата начала</span>
+                <span class="annotate shedule">Расписание</span>
+                <span class="annotate cost">Стоимость</span>
+                <span class="annotate commit">Регистарция</span>
+              </div>
+
+              <div class="course-info">
+                <div class="info start">
+                  <span class="annotate">Дата начала</span>
+                  <span>12.12.2018</span>
+                </div>
+                <div class="info cost">
+                  <span class="annotate">Стоимость</span>
+                  <span><span class="price">25 000</span> тг/мес</span>
+                </div>
+                <div class="info shedule">
+                  <span class="annotate">Расписание</span>
+                  <div class="timetable-info">
+                    <span class="duration">6 месяцев</span>
+                    <span class="by-days">Вт, Чт 21:00-23:00</span>
+                  </div>
+                </div>
+
+                <a href="#" class="button yellow commit">Записаться</a>
+              </div>
+
+              <div class="course-info">
+                <div class="info start">
+                  <span class="annotate">Дата начала</span>
+                  <span>12.12.2018</span>
+                </div>
+                <div class="info cost">
+                  <span class="annotate">Стоимость</span>
+                  <span><span class="price">25 000</span> тг/мес</span>
+                </div>
+                <div class="info shedule">
+                  <span class="annotate">Расписание</span>
+                  <div class="timetable-info">
+                    <span class="duration">6 месяцев</span>
+                    <span class="by-days">Вт, Чт 21:00-23:00</span>
+                  </div>
+                </div>
+
+                <a href="#" class="button yellow commit">Записаться</a>
+              </div>
+
+              <div class="course-info">
+                <div class="info start">
+                  <span class="annotate">Дата начала</span>
+                  <span>12.12.2018</span>
+                </div>
+                <div class="info cost">
+                  <span class="annotate">Стоимость</span>
+                  <span><span class="price">25 000</span> тг/мес</span>
+                </div>
+                <div class="info shedule">
+                  <span class="annotate">Расписание</span>
+                  <div class="timetable-info">
+                    <span class="duration">6 месяцев</span>
+                    <span class="by-days">Вт, Чт 21:00-23:00</span>
+                  </div>
+                </div>
+
+                <a href="#" class="button yellow commit">Записаться</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course">
+
+          <div class="preview-box">
+            <div class="container">
+              <div class="course-preview">
+                <span class="logo" style="background-image: url(assets/images/english-logo.svg);"></span>
+                <h3 class="title">English</h3>
+                <span class="opening-arrow"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="course-information">
+              <div class="course-info annotation">
+                <span class="annotate start">Дата начала</span>
+                <span class="annotate shedule">Расписание</span>
+                <span class="annotate cost">Стоимость</span>
+                <span class="annotate commit">Регистарция</span>
+              </div>
+
+              <div class="course-info">
+                <div class="info start">
+                  <span class="annotate">Дата начала</span>
+                  <span>12.12.2018</span>
+                </div>
+                <div class="info cost">
+                  <span class="annotate">Стоимость</span>
+                  <span><span class="price">25 000</span> тг/мес</span>
+                </div>
+                <div class="info shedule">
+                  <span class="annotate">Расписание</span>
+                  <div class="timetable-info">
+                    <span class="duration">6 месяцев</span>
+                    <span class="by-days">Вт, Чт 21:00-23:00</span>
+                  </div>
+                </div>
+
+                <a href="#" class="button yellow commit">Записаться</a>
+              </div>
+
+              <div class="course-info">
+                <div class="info start">
+                  <span class="annotate">Дата начала</span>
+                  <span>12.12.2018</span>
+                </div>
+                <div class="info cost">
+                  <span class="annotate">Стоимость</span>
+                  <span><span class="price">25 000</span> тг/мес</span>
+                </div>
+                <div class="info shedule">
+                  <span class="annotate">Расписание</span>
+                  <div class="timetable-info">
+                    <span class="duration">6 месяцев</span>
+                    <span class="by-days">Вт, Чт 21:00-23:00</span>
+                  </div>
+                </div>
+
+                <a href="#" class="button yellow commit">Записаться</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course">
+
+          <div class="preview-box">
+            <div class="container">
+              <div class="course-preview">
+                <span class="logo" style="background-image: url(assets/images/django-logo.svg);"></span>
+                <h3 class="title">Python</h3>
+                <span class="opening-arrow"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="course-information">
+              <div class="course-info annotation">
+                <span class="annotate start">Дата начала</span>
+                <span class="annotate shedule">Расписание</span>
+                <span class="annotate cost">Стоимость</span>
+                <span class="annotate commit">Регистарция</span>
+              </div>
+
+              <div class="course-info">
+                <div class="info start">
+                  <span class="annotate">Дата начала</span>
+                  <span>12.12.2018</span>
+                </div>
+                <div class="info cost">
+                  <span class="annotate">Стоимость</span>
+                  <span><span class="price">25 000</span> тг/мес</span>
+                </div>
+                <div class="info shedule">
+                  <span class="annotate">Расписание</span>
+                  <div class="timetable-info">
+                    <span class="duration">6 месяцев</span>
+                    <span class="by-days">Вт, Чт 21:00-23:00</span>
+                  </div>
+                </div>
+
+                <a href="#" class="button yellow commit">Записаться</a>
+              </div>
+
+              <div class="course-info">
+                <div class="info start">
+                  <span class="annotate">Дата начала</span>
+                  <span>12.12.2018</span>
+                </div>
+                <div class="info cost">
+                  <span class="annotate">Стоимость</span>
+                  <span><span class="price">25 000</span> тг/мес</span>
+                </div>
+                <div class="info shedule">
+                  <span class="annotate">Расписание</span>
+                  <div class="timetable-info">
+                    <span class="duration">6 месяцев</span>
+                    <span class="by-days">Вт, Чт 21:00-23:00</span>
+                  </div>
+                </div>
+
+                <a href="#" class="button yellow commit">Записаться</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div class="level-test-box">
+      <div class="level-test-body">
+        <h3 class="big-title">Проверь себя!</h3>
+        <h4 class="subtitle">Пройдите наш тест и узнайте свой уровень в программировании</h4>
+
+        <a class="button" href="#">Пройти тест</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="partners-box">
+    <div class="container">
+      <div class="partners-head">
+        <h1 class="big-title">С нами сотрудничают</h1>
+        <h4 class="subtitle">Наши курсы постоянно дополняются актуальной информацией.</h4>
+      </div>
+
+      <div class="partners-body">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="partner">
+              <img class="advantage-logo" src="assets/images/partner-1.png" alt="ss">
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="partner">
+              <img class="advantage-logo" src="assets/images/partner-2.png" alt="ss">
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="partner">
+              <img class="advantage-logo" src="assets/images/partner-3.png" alt="ss">
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="partner">
+              <img class="advantage-logo" src="assets/images/partner-4.png" alt="ss">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reviews-box">
+    <div class="container">
+      <div class="reviews-head">
+        <h1 class="big-title">Отзывы</h1>
+        <h4 class="subtitle">Наши курсы постоянно дополняются актуальной информацией.</h4>
+      </div>
+    </div>
+
+    <div class="container container-disable-on-mobile">
+      <div class="reviews-body">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6">
+            <div class="review">
+              <img src="assets/images/graduate-1.png" alt="Омирбек Санжар" class="reviewer-photo">
+              <h3 class="reviewer-name">Омирбек Санжар</h3>
+              <p class="review-text">Курсы очень информативные, я здорово прокачался на них. Это помогло мне найти в
+                жизни нужное направление, поэтому теперь мне намного легче применять полученные знания на работе.
+                Спасибо большое школе Vault77 за то, что я смог найти свое место под солнцем :)</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6">
+            <div class="review">
+              <img src="assets/images/graduate-2.png" alt="Омирбек Санжар" class="reviewer-photo">
+              <h3 class="reviewer-name">Анжелика Бремена</h3>
+              <span style="background-image: url(assets/images/graduate-2-photo.png)" class="video-preview"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lead-form-box footer">
+    <div class="container">
+      <div class="lead-form-head">
+        <h1 class="big-title">Оставить заявку</h1>
+        <h4 class="subtitle">Уже готовы кодить? Оставьте заявку и мы расскажем вам обо всем, что вам нужно знать</h4>
+      </div>
+
+      <div class="lead-form-body">
+        <form class="lead-form" action="/leads">
+          <div class="row">
+            <div class="col-12 col-sm-4 col-md-4">
+              <div class="input-group">
+                <input class="input" type="text" placeholder="Имя">
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-4">
+              <div class="input-group">
+                <input class="input" type="email" placeholder="E-mail">
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-4">
+              <div class="input-group">
+                <button class="button" type="submit">Записаться</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-4 col-md-4">
+          <div class="footer-extra">
+            <div class="logo-box">
+              <img src="assets/images/footer-vault-logo.svg" alt="Logo" class="logo">
+              <span class="tagline">Школа программирования</span>
+            </div>
+
+            <span class="copyright">© 2018 Vault77 almaty</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4">
+          <div class="footer-sections">
+
+            <h3 class="title">Разделы</h3>
+            <div class="sections">
+              <a class="section-link" href="#">О школе</a>
+              <a class="section-link" href="#">Наши студенты</a>
+              <a class="section-link" href="#">Работодателям</a>
+              <a class="section-link" href="#">IT сообщество</a>
+              <a class="section-link" href="#">Вакансии</a>
+              <a class="section-link" href="#">Блог</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4">
+          <div class="footer-contacts">
+            <h3 class="title">На связи</h3>
+
+            <div class="contacts">
+              <span class="contact">г. Алматы Байтурсынова 55</span>
+              <a class="contact" href="#">+7 778 500 78 73</a>
+              <a class="contact" href="#">sales@vault77.kz</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

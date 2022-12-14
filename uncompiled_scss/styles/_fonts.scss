@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Avenir Next';
+  src:url($font-path + '.eot');
+  src:url($font-path + '.eot?#iefix') format('embedded-opentype'),
+    url($font-path + '.woff') format('woff'),
+    url($font-path + '.woff2') format('woff2'),
+    url($font-path + '.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src:url($font-bold-path + '.eot');
+  src:url($font-bold-path + '.eot?#iefix') format('embedded-opentype'),
+    url($font-bold-path + '.woff') format('woff'),
+    url($font-bold-path + '.woff2') format('woff2'),
+    url($font-bold-path + '.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

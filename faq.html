@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+  <script src="assets/javascript/main.js"></script>
+  <title>Main page</title>
+</head>
+
+<body>
+
+  <div class="header-box">
+    <div class="container">
+      <header class="header">
+        <a class="logo-link" href="#">
+          <div class="logo-box">
+            <img class="logo" src="assets/images/logo.svg" alt="Logo">
+            <span class="tagline">Школа программирования</span>
+          </div>
+        </a>
+
+        <nav class="menu">
+          <div class="container">
+            <div class="menu-flexbox">
+              <ul class="menu-list w60">
+                <li class="menu-item with-submenu">
+                  <a href="#" class="menu-link">Курсы</a>
+                  <ul class="submenu">
+                    <li><a href="#">Python Django</a></li>
+                    <li><a href="#">JS</a></li>
+                    <li><a href="#">Ruby on Rails</a></li>
+                    <li><a href="#">English</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="menu-list">
+                <li class="menu-item"><a href="#" class="menu-link">Трудоустройство</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Блог</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Контакты</a></li>
+
+                <li class="menu-item hide"><a href="#" class="menu-link">О школе</a></li>
+                <li class="menu-item hide"><a href="#" class="menu-link">Работодатели</a></li>
+                <li class="menu-item hide"><a href="#" class="menu-link">Отывы</a></li>
+                <li class="menu-item hide"><a href="#" class="menu-link">Наши студенты</a></li>
+                <li class="menu-item hide"><a href="#" class="menu-link">FAQ</a></li>
+                <li class="menu-item hide"><a href="#" class="menu-link">Финансирования</a></li>
+
+                <li class="menu-item"><a href="#" class="menu-link recall"></a></li>
+
+                <li class="menu-item hamburger-button">
+                  <button class="hamburger hamburger--squeeze" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+        </nav>
+      </header>
+    </div>
+  </div>
+
+  <div class="first-screen-block usual gradient gradient-gray"
+    style="background-image: url('assets/images/faq-top.jpg'); background-position: right;">
+    <div class="first-screen-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-10">
+            <h1 class="super-big-title">Вопросы и ответы</h1>
+            <p class="description">Для того что бы найти ответ на свой вопрос, прокрутите вниз</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="first-screen-bottom"></div>
+  </div>
+
+
+  <div class="questions-box">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-3 col-md-3">
+          <ul class="questions">
+            <li class="question"><a href="#answr1" class="link">Как поступить в Школу программистов?</a></li>
+            <li class="question"><a href="#answr2" class="link">Как проходит вступительный экзамен и как к нему
+                подготовиться?</a></li>
+            <li class="question"><a href="#answr3" class="link">Сколько лет длится обучение в Школе программистов?</a>
+            </li>
+            <li class="question"><a href="#answr4" class="link">Какие курсы я смогу изучать в Школе программистов?</a>
+            </li>
+            <li class="question"><a href="#answr5" class="link">Что такое «базовые курсы»?</a></li>
+            <li class="question"><a href="#answr6" class="link">А что если мне не подойдет расписание?</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6">
+          <div class="answers">
+            <div class="answer" id="answr1">
+              <h3 class="title">Как поступить в Школу программистов?</h3>
+
+              <p class="text">Выбери образовательный центр, в котором хочешь учиться: Мытищи, Королёв, Пушкино, Москва
+                (Яндекс), Долгопрудный (Физтехпарк) или Онлайн (по всей России)
+                <br>
+                Запишись на вступительный экзамен через нашу систему EduApp и пройди бесплатный
+                подготовительный курс<br>
+                Или приходи подготовленным прямо в Школу в назначенное время<br>
+                Сдай экзамен и ступи на путь настоящего программиста!</p>
+            </div>
+
+            <div class="answer" id="answr2">
+              <h3 class="title">Как проходит вступительный экзамен и как к нему подготовиться?</h3>
+
+              <p class="text">Вступительный экзамен длится 2-3 часа и состоит из заданий по математике, логике и
+                алгоритмике.
+                Если у вас есть знания основ программирования, то вы сможете продемонстрировать свои навыки. Их наличие
+                не является обязательным условием для поступления, но является преимуществом абитуриента. Для решения
+                задач не требуется углубленных знаний школьной программы или особых знаний по информатике. Основной упор
+                делается на умение находить свои, порой нестандартные способы решения задач. Часть задач направлена на
+                проверку математической культуры школьника и на выявление его уровня развития.</p>
+              <p class="text">Экзамены в очные образовательные центры проходят в той школе, куда ты поступаешь. Лучше
+                заранее записаться в нашей системе EduApp (чтобы мест хватило всем). На экзамен захвати с собой тетрадь,
+                письменные принадлежности и хорошее настроение! :)
+                Если тебе удобнее учиться онлайн, то экзамен тоже будешь сдавать онлайн – дистанционно в системе EduApp,
+                в назначенное время. Для этого потребуется компьютер с колонками и интернет.</p>
+              <p class="text">Как подготовиться: мы разработали бесплатный онлайн курс по подготовке к вступительному
+                экзамену! Наши преподаватели подготовили задания, которые помогут тебе понять, что следует ждать от
+                экзамена, а также записали специальные видеоразборы с решениями.</p>
+              <p class="text">Регистрируйся на экзамен, разбирай задания и знакомься со Школой уже сейчас!</p>
+            </div>
+
+            <div class="answer" id="answr3">
+              <h3 class="title">Какие курсы я смогу изучать в Школе программистов?</h3>
+
+              <p class="text">Обучение в нашей Школе основано на университетской модели: каждая группа изучает набор
+                обязательных базовых курсов, при этом уже начиная со второго семестра ты сможешь выбрать для посещения
+                дополнительные спецкурсы, исходя из своих интересов.</p>
+            </div>
+
+            <div class="answer" id="answr4">
+              <h3 class="title">Что такое «базовые курсы»?</h3>
+
+              <p class="text">Базовые курсы — это набор предметов, которые должен изучить каждый начинающий программист.
+                Именно они помогают развить навыки программирования, алгоритмизации, работы с компьютерными сетями и
+                другие, являющеся базовыми для развития в любом направлении IT-сферы.</p>
+              <p class="text">В Школе программистов основными курсами являются различные языки программирования, а также
+                дискретная математика, форматы данных, алгоритмы и структуры данных, администрирование операционных
+                систем, компьютерные сети.</p>
+            </div>
+
+            <div class="answer" id="answr5">
+              <h3 class="title">А что если мне не подойдет расписание?</h3>
+
+              <p class="text">На собеседовании тебе будет предложено несколько различных групп с разным расписанием, и
+                ты сможешь выбрать ту, которая подходит тебе большего всего. Но даже если подходящей группы так и не
+                найдется, у тебя всегда есть возможность учиться в нашей Школе онлайн.</p>
+            </div>
+
+            <div class="answer" id="answr6">
+                <h3 class="title">А что если мне не подойдет расписание?</h3>
+  
+                <p class="text">На собеседовании тебе будет предложено несколько различных групп с разным расписанием, и
+                  ты сможешь выбрать ту, которая подходит тебе большего всего. Но даже если подходящей группы так и не
+                  найдется, у тебя всегда есть возможность учиться в нашей Школе онлайн.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="lead-form-box footer faq">
+    <div class="container">
+      <div class="lead-form-head">
+        <h1 class="big-title">У вас остались вопросы?</h1>
+        <h4 class="subtitle">Мы ответим на ваш вопрос в течении часа.</h4>
+      </div>
+
+      <div class="lead-form-body">
+        <form class="lead-form" action="/leads">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-6">
+              <div class="input-group">
+                <input class="input" type="text" placeholder="Имя">
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6">
+              <div class="input-group">
+                <input class="input" type="email" placeholder="E-mail">
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12">
+              <div class="input-group">
+                <input class="input" type="text" placeholder="Ваш вопрос?">
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12">
+              <div class="input-group centered">
+                <button class="button" type="submit">Записаться</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-4 col-md-4">
+          <div class="footer-extra">
+            <div class="logo-box">
+              <img src="assets/images/footer-vault-logo.svg" alt="Logo" class="logo">
+              <span class="tagline">Школа программирования</span>
+            </div>
+
+            <span class="copyright">© 2018 Vault77 almaty</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4">
+          <div class="footer-sections">
+
+            <h3 class="title">Разделы</h3>
+            <div class="sections">
+              <a class="section-link" href="#">О школе</a>
+              <a class="section-link" href="#">Наши студенты</a>
+              <a class="section-link" href="#">Работодателям</a>
+              <a class="section-link" href="#">IT сообщество</a>
+              <a class="section-link" href="#">Вакансии</a>
+              <a class="section-link" href="#">Блог</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4">
+          <div class="footer-contacts">
+            <h3 class="title">На связи</h3>
+
+            <div class="contacts">
+              <span class="contact">г. Алматы Байтурсынова 55</span>
+              <a class="contact" href="#">+7 778 500 78 73</a>
+              <a class="contact" href="#">sales@vault77.kz</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

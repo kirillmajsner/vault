@@ -1,0 +1,67 @@
+@import 'grid/main';
+@import 'hamburgers/main';
+@import 'slick/main';
+
+@import 'styles/normalize';
+@import 'styles/variables';
+@import 'styles/fonts';
+@import 'styles/mixins';
+@import 'styles/grid';
+
+@import 'styles/common';
+@import 'styles/header';
+@import 'styles/gradients';
+@import 'styles/first_screen';
+@import 'styles/text_styles';
+@import 'styles/buttons';
+@import 'styles/titles';
+@import 'styles/elements';
+@import 'styles/courses';
+@import 'styles/advantages';
+@import 'styles/lead_form';
+@import 'styles/schedule';
+@import 'styles/level_test';
+@import 'styles/partners';
+@import 'styles/reviews';
+@import 'styles/footer';
+@import 'styles/looking_for';
+@import 'styles/we_offer';
+@import 'styles/questions';
+@import 'styles/points';
+@import 'styles/graduates';
+@import 'styles/certificates';
+@import 'styles/blog';
+@import 'styles/post';
+@import 'styles/contacts';
+@import 'styles/students';
+@import 'styles/reviews_page';
+@import 'styles/horizontal_scroling';
+@import 'styles/financing';
+@import 'styles/financing_points';
+@import 'styles/exception';
+@import 'styles/modals';
+
+body {
+  font-family: 'Avenir Next', sans-serif;
+  font-style: normal;
+  font-weight: 100; 
+  font-size: $fz-medium;
+}
+
+@include desktop {
+  body {
+    &.darkened {
+      &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #08080888;
+        position: fixed;
+        z-index: 18;
+        top: 0;
+        bottom: 0;
+      }
+    }
+  }
+}

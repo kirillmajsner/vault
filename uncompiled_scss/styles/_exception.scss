@@ -1,0 +1,69 @@
+.exception-box {
+  background: #282a2d;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .exception {
+    height: 400px;
+    width: 100%;
+
+    &.e404 {
+      background: url("../images/404.png") center no-repeat;
+      background-size: contain;
+    }
+
+    &.e500 {
+      background: url("../images/500.png") center no-repeat;
+      background-size: contain;
+    }
+
+    .exception-body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      padding-top: 300px;
+
+      .message {
+        font-size: 15px;
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .exception-box {
+    .exception {
+      height: 582px;
+
+      .exception-body {
+        padding-top: 310px;
+
+        .message {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .exception-box {
+    .exception {
+      height: 582px;
+
+      .exception-body {
+        padding-top: 325px;
+
+        .message {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

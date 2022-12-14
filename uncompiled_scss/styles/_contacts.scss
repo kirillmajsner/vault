@@ -1,0 +1,131 @@
+.contacts-box {
+  .contacts {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 2px;
+    margin-bottom: 47px;
+
+    .contact {
+      padding-left: 52px;
+      position: relative;
+      margin-bottom: 26px;
+
+      .title {
+        color: #282a2d;
+        font-size: 15px;
+
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      .description {
+        color: #282a2d;
+        font-size: 15px;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      .link {
+        color: inherit;
+        display: inline-block;
+        text-decoration: none;
+      }
+
+      &.compass,
+      &.phone,
+      &.email,
+      &.skype {
+        &::before {
+          position: absolute;
+          content: "";
+          display: block;
+          height: 20px;
+          width: 20px;
+          left: 12px;
+          top: -4px;
+        }
+      }
+
+      &.compass::before {
+        background: url("../images/compass-logo.svg") center no-repeat;
+        background-size: contain;
+        top: 0;
+      }
+
+      &.phone::before {
+        background: url("../images/phone-logo.svg") center no-repeat;
+        background-size: contain;
+      }
+
+      &.email::before {
+        background: url("../images/email-logo.svg") center no-repeat;
+        background-size: contain;
+      }
+
+      &.skype::before {
+        background: url("../images/skype-logo.svg") center no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  .map-box {
+    margin-bottom: 32px;
+
+    width: 233px;
+    height: 233px;
+
+    margin: auto;
+
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+
+@include desktop {
+  .contacts-box {
+    margin-bottom: 64px;
+
+    .contacts {
+      padding-top: 24px;
+      margin-bottom: 47px;
+
+      .contact {
+        padding-left: 66px;
+        margin-left: 90px;
+        margin-bottom: 43px;
+
+        .title {
+          font-size: 20px;
+          margin-bottom: 2px;
+        }
+
+        .description {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+
+        &.compass,
+        &.phone,
+        &.email,
+        &.skype {
+          &::before {
+            position: absolute;
+            content: "";
+            display: block;
+            height: 24px;
+            width: 24px;
+            left: 12px;
+            top: -4px;
+          }
+        }
+      }
+    }
+
+    .map-box {
+      width: 430px;
+      height: 430px;
+    }
+  }
+}

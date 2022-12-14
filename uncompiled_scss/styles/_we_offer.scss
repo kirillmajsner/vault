@@ -1,0 +1,128 @@
+.we-offer-box {
+  background: url("../images/looking-for-center-bg.png") center no-repeat;
+  background-size: 100% 100%;
+
+  padding-top: 129px;
+  padding-bottom: 115px;
+
+  margin-bottom: 60px;
+
+  .offers-head {
+    text-align: center;
+    margin-bottom: 26px;
+  }
+
+  .offers-body {
+    .offer {
+      text-align: center;
+      padding: 10px 30px;
+
+      .logo {
+        display: inline-block;
+        width: auto;
+        height: 62px;
+        margin-top: 0;
+        margin-bottom: 13px;
+      }
+
+      .title {
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        line-height: 1.4;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .we-offer-box {
+    background: url("../images/employment-bg-1.png") center no-repeat;
+    background-size: 100% 100%;
+
+    padding-top: 224px;
+    padding-bottom: 195px;
+
+    margin-bottom: 60px;
+
+    .offers-head {
+      text-align: center;
+      margin-bottom: 26px;
+    }
+
+    .offers-body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .offer {
+        text-align: center;
+        padding: 10px;
+        flex-basis: 33%;
+
+        .logo {
+          display: inline-block;
+          width: auto;
+          height: 62px;
+          margin-top: 0;
+          margin-bottom: 13px;
+        }
+
+        .title {
+          font-size: 18px;
+          margin-top: 0;
+          margin-bottom: 20px;
+          line-height: 1.4;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .we-offer-box {
+    background: url("../images/employment-bg-1.png") center no-repeat;
+    background-size: 100% 100%;
+
+    margin-bottom: 105px;
+    padding-bottom: 173px;
+
+    .offers-head {
+      text-align: center;
+      margin-bottom: 26px;
+    }
+
+    .offers-body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .offer {
+        text-align: center;
+        padding: 10px;
+        flex-basis: 20%;
+
+        .logo {
+          display: inline-block;
+          width: auto;
+          height: 62px;
+          margin-top: 0;
+          margin-bottom: 40px;
+        }
+
+        .title {
+          font-size: 18px;
+          margin-top: 0;
+          margin-bottom: 20px;
+          line-height: 1.4;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

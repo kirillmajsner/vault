@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+  <script src="assets/javascript/main.js"></script>
+  <title>Main page</title>
+</head>
+
+<body>
+
+  <div class="header-box">
+    <div class="container">
+      <header class="header">
+        <a class="logo-link" href="#">
+          <div class="logo-box">
+            <img class="logo" src="assets/images/logo.svg" alt="Logo">
+            <span class="tagline">Школа программирования</span>
+          </div>
+        </a>
+
+        <nav class="menu">
+          <div class="container">
+            <div class="menu-flexbox">
+              <ul class="menu-list w60">
+                <li class="menu-item with-submenu">
+                  <a href="#" class="menu-link">Курсы</a>
+                  <ul class="submenu">
+                    <li><a href="#">Python Django</a></li>
+                    <li><a href="#">JS</a></li>
+                    <li><a href="#">Ruby on Rails</a></li>
+                    <li><a href="#">English</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="menu-list">
+                <li class="menu-item"><a href="#" class="menu-link">Трудоустройство</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Блог</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Контакты</a></li>
+
+                <li class="menu-item hide"><a href="#" class="menu-link">О школе</a></li>
+                <li class="menu-item hide"><a href="#" class="menu-link">Работодатели</a></li>
+                <li class="menu-item hide"><a href="#" class="menu-link">Отывы</a></li>
+                <li class="menu-item hide"><a href="#" class="menu-link">Наши студенты</a></li>
+                <li class="menu-item hide"><a href="#" class="menu-link">FAQ</a></li>
+                <li class="menu-item hide"><a href="#" class="menu-link">Финансирования</a></li>
+
+                <li class="menu-item"><a href="#" class="menu-link recall"></a></li>
+
+                <li class="menu-item hamburger-button">
+                  <button class="hamburger hamburger--squeeze" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+        </nav>
+      </header>
+    </div>
+  </div>
+
+  <div class="first-screen-block usual gradient gradient-gray"
+    style="background-image: url('assets/images/contacts-fs-bg.jpg');">
+    <div class="first-screen-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-10">
+            <h1 class="super-big-title">Контакты</h1>
+            <p class="description">Будем рады вас видеть, у нас есть печеньки) </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="first-screen-bottom"></div>
+  </div>
+
+  <div class="contacts-box">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <ul class="contacts">
+            <li class="contact compass">
+              <h3 class="title">Мы находимся по адресу</h3>
+              <p class="description">050013, г. Алматы, ул. Толе би, д. 109, блок Б, офис 705</p>
+            </li>
+            <li class="contact phone">
+              <h3 class="title">Номер телефона</h3>
+              <p class="description">
+                <a href="#" class="link">+7 771 771 22 11</a>
+              </p>
+            </li>
+            <li class="contact email">
+              <h3 class="title">Почта</h3>
+              <p class="description">
+                <a href="#" class="link">dinara@vault77.kz</a>
+              </p>
+            </li>
+            <li class="contact skype">
+              <h3 class="title">Skype</h3>
+              <p class="description">
+                <a href="#" class="link">dinarka_d</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="map-box">
+            <iframe
+              src="https://yandex.com/map-widget/v1/?um=constructor%3A787e09ffd56f9170a73bcc3c9568521bcb12202e50a0d02097ff081f871f676e&amp;source=constructor"
+              width="100%" height="100%" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lead-form-box footer">
+    <div class="container">
+      <div class="lead-form-head">
+        <h1 class="big-title">Возможно у нас для тебя что-то есть)</h1>
+        <h4 class="subtitle">Оставьте свои контактные данные, и мы свяжемся с вами в течение 10 минут!</h4>
+      </div>
+
+      <div class="lead-form-body">
+        <form class="lead-form" action="/leads">
+          <div class="row">
+            <div class="col-12 col-sm-4 col-md-4">
+              <div class="input-group">
+                <input class="input" type="text" placeholder="Имя">
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-4">
+              <div class="input-group">
+                <input class="input" type="email" placeholder="E-mail">
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-4">
+              <div class="input-group">
+                <button class="button" type="submit">Записаться</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-4 col-md-4">
+          <div class="footer-extra">
+            <div class="logo-box">
+              <img src="assets/images/footer-vault-logo.svg" alt="Logo" class="logo">
+              <span class="tagline">Школа программирования</span>
+            </div>
+
+            <span class="copyright">© 2018 Vault77 almaty</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4">
+          <div class="footer-sections">
+
+            <h3 class="title">Разделы</h3>
+            <div class="sections">
+              <a class="section-link" href="#">О школе</a>
+              <a class="section-link" href="#">Наши студенты</a>
+              <a class="section-link" href="#">Работодателям</a>
+              <a class="section-link" href="#">IT сообщество</a>
+              <a class="section-link" href="#">Вакансии</a>
+              <a class="section-link" href="#">Блог</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4">
+          <div class="footer-contacts">
+            <h3 class="title">На связи</h3>
+
+            <div class="contacts">
+              <span class="contact">г. Алматы Байтурсынова 55</span>
+              <a class="contact" href="#">+7 778 500 78 73</a>
+              <a class="contact" href="#">sales@vault77.kz</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

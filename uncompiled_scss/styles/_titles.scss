@@ -1,0 +1,40 @@
+.big-title {
+  font-size: 30px;
+  color: #282a2d;
+  margin: 0 0 7px;
+  letter-spacing: 0.2px;
+}
+
+.subtitle {
+  font-size: 15px;
+  font-weight: 100;
+  color: #83878f;
+  margin: 0 0 10px;
+  letter-spacing: 0.8px;
+}
+
+.super-big-title {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+
+  margin: 0;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+@include desktop {
+  .big-title {
+    font-size: 50px;
+    letter-spacing: 1px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .super-big-title {
+    font-size: 100px;
+    line-height: 1.2;
+  }
+}

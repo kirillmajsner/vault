@@ -1,0 +1,19 @@
+.description {
+  font-size: 18px;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.descriptions {
+  .description {
+    margin-bottom: 30px;
+  }
+}
+
+@include desktop {
+  .description {
+    font-size: 20px;
+  }
+}

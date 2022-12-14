@@ -1,0 +1,260 @@
+.header-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header {
+  color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 25px 0 10px;
+
+  position: relative;
+  z-index: 88;
+
+  .logo-link {
+    text-decoration: none;
+    color: white;
+
+    .logo-box {
+      .logo {
+        display: inline-block;
+        width: auto;
+        height: 45px;
+      }
+
+      .tagline {
+        display: none;
+      }
+    }
+  }
+
+  .menu {
+    .submenu {
+      display: none;
+    }
+
+    .menu-list {
+      width: 100%;
+
+      margin-top: 5px;
+
+      padding: 0;
+      list-style: none;
+      z-index: 1000;
+
+      .menu-item {
+        display: none;
+        margin: 20px 0;
+
+        &.hide {
+          display: none;
+        }
+
+        .menu-link {
+          display: block;
+          color: inherit;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: $fz-medium;
+
+          padding: 13px 10px 15px;
+
+          &.recall {
+            padding: 0;
+            position: relative;
+            width: 100%;
+
+            &:before {
+              content: url("../images/recall.svg");
+            }
+
+            &:after {
+              content: url("../images/dots.svg");
+              position: absolute;
+              bottom: -95px;
+              left: 3px;
+            }
+          }
+        }
+      }
+
+      .menu-item.hamburger-button {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 0px;
+      }
+    }
+
+    &.opened {
+      color: #2d2c28;
+      background: url("../images/vault-menu-77.svg") 128% 100% no-repeat, white;
+
+      z-index: 888;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow-y: scroll;
+      padding: 30px 15px;
+
+      .menu-list {
+        .menu-item.hamburger-button {
+          right: 5px;
+          margin: 20px;
+        }
+
+        justify-content: space-between;
+
+        .menu-item {
+          display: block;
+          flex-basis: 45%;
+
+          .hamburger {
+            .hamburger-inner,
+            ::after,
+            ::before {
+              background-color: $color-gray;
+            }
+          }
+        }
+      }
+
+      .menu-item:nth-last-child(2) {
+        display: none;
+      }
+
+      .recall {
+        display: none;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .header {
+    padding-top: 19px;
+    padding-bottom: 0;
+
+    .logo-link {
+      .logo-box {
+        .logo {
+          height: 48px;
+        }
+  
+        .tagline {
+          display: block;
+          font-size: 13px;
+          font-weight: bold;
+          opacity: 0.5;
+        }
+      }
+    }
+    
+    .menu {
+      .toggle {
+        display: none;
+      }
+
+      .menu-flexbox {
+        display: flex;
+        align-items: baseline;
+        position: relative;
+        margin-right: -30px;
+
+        .w60 {
+          flex-basis: 60%;
+        }
+      }
+
+      .menu-list {
+        position: static;
+        display: flex;
+        align-items: center;
+
+        .menu-item {
+          display: inline-block;
+          margin: 10px;
+
+          .menu-link {
+            transition-duration: 0.15s;
+            transition-property: opacity;
+            transition-timing-function: linear;
+
+            &.buy-ticket {
+              margin-left: 0;
+            }
+          }
+
+          .menu-item.active .menu-link,
+          .menu-link:hover,
+          .submenu a:hover {
+            cursor: pointer;
+            opacity: 0.7;
+          }
+        }
+
+        .menu-item.hamburger-button {
+          display: block;
+          position: initial;
+          margin-left: 25px;
+          right: 20px;
+          margin: 20px;
+          top: 40px;
+        }
+      }
+
+      &.opened {
+        bottom: auto;
+        background: url("../images/vault-menu-77.svg") 87% 100% no-repeat, white;
+
+        .menu-list {
+          display: flex;
+          flex-wrap: wrap;
+
+          > * {
+            width: 50%;
+          }
+
+          .with-submenu {
+            display: flex;
+            flex-basis: 80%;
+          }
+
+          .submenu {
+            display: block;
+            list-style: none;
+
+            a {
+              display: inline-block;
+              text-decoration: none;
+              color: inherit;
+              font-size: 15px;
+              padding: 13px 10px 15px;
+            }
+          }
+        }
+
+        padding: 0;
+
+        .menu-list {
+          padding-top: 120px;
+          padding-bottom: 120px;
+
+          .menu-item.hamburger-button {
+            text-align: right;
+            position: absolute;
+            right: 20px;
+            margin: 20px;
+          }
+        }
+      }
+    }
+  }
+}

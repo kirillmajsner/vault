@@ -1,0 +1,109 @@
+.looking-for-box {
+  padding-top: 0;
+  padding-bottom: 65px;
+
+  .looking-for-head {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .looking-for-body {
+    .position {
+      border: 1px solid #f6f4ef;
+      padding: 23px 15px 17px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+
+      .position-label {
+        background: #ffdb60;
+        border-radius: 15px;
+
+        padding: 4px 11px;
+        margin: 0 0 16px;
+        display: inline-block;
+
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .position-title {
+        font-size: 18px;
+        margin: 0 0 5px;
+        line-height: 1.5;
+      }
+
+      .position-description {
+        color: #83878f;
+        font-size: 15px;
+        margin: 0 0 10px;
+        line-height: 1.6;
+      }
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 60px 0 #928f8752;
+      }
+    }
+  }
+
+  .looking-for-footer {
+    text-align: center;
+  }
+}
+
+@include desktop {
+  .looking-for-box {
+    padding-bottom: 20px;
+
+    .looking-for-head {
+      margin-bottom: 43px;
+
+      .subtitle {
+        padding-left: 25%;
+        padding-right: 25%;
+      }
+    }
+
+    .looking-for-body {
+      margin-bottom: 10px;
+
+      .position {
+        border: 1px solid #f6f4ef;
+        padding: 39px 40px 30px;
+        border-radius: 15px;
+        height: calc(100% - 30px);
+        margin-bottom: 30px;
+
+        .position-label {
+          padding: 4px 11px;
+          margin: 0 0 16px;
+          display: inline-block;
+
+          font-size: 14px;
+          font-weight: bold;
+        }
+
+        .position-title {
+          font-size: 20px;
+          margin: 0 0 16px;
+          line-height: 1.5;
+        }
+
+        .position-description {
+          color: #83878f;
+          font-size: 15px;
+          margin: 0 0 10px;
+          line-height: 1.6;
+        }
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 0 60px 0 #928f8752;
+        }
+      }
+    }
+
+    .looking-for-footer {
+    }
+  }
+}

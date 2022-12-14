@@ -1,0 +1,40 @@
+@media (max-width: map-get($container-max-widths, sm)) {
+  div[class^="col"] {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .row {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+
+  .container-disable-on-mobile {
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: hidden;
+  }
+}
+
+.m-order-0 {
+  order: 0;
+}
+
+.m-order-1 {
+  order: 1;
+}
+
+@include tablet {
+  .t-order-0 {
+    order: 0;
+  }
+  
+  .t-order-1 {
+    order: 1;
+  }
+}

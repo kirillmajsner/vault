@@ -1,0 +1,52 @@
+.speakers-block {
+  overflow-x: hidden;
+  margin-top: 20px;
+
+  .speaker {
+    display: flex;
+    margin-bottom: 40px;
+
+    .image-box {
+      flex-shrink: 0;
+      transform: scale(0.7);
+      margin-left: -25px;
+      align-self: flex-start;
+      min-width: 38%;
+ 
+      .image {
+        clip-path: url("#myClip");
+        max-height: 158px;
+        max-width: 128px;
+        width: 100%;
+      }
+    }
+
+    .name,
+    .info {
+      display: block;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+
+    .links > * {
+      margin-right: 8px;
+    }
+  }
+}
+
+
+@include desktop {
+  .speakers-block {
+    .speakers {
+      width: 88%;
+    }
+
+    .speaker {
+      .image-box {
+        transform: none;
+        width: 164px;
+        margin-left: 0;
+      }
+    }
+  }
+}

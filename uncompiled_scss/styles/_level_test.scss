@@ -1,0 +1,49 @@
+.level-test-box {
+  margin-top: 8px;
+  margin-bottom: 30px;
+
+
+  padding: 40px 25px;
+  border-radius: 15px;
+
+  background: url("../images/test-bg-m.png") center no-repeat;
+  background-size: cover;
+
+  .level-test-body {
+    text-align: center;
+
+    .subtitle {
+      color: #2D2C28;
+    }
+
+    .button {
+      margin-top: 10px;
+    }
+  }
+}
+
+@include desktop {
+  .level-test-box {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  
+    padding: 199px 25px 100px;
+    border-radius: 15px;
+  
+    background: url("../images/test-bg.png") center no-repeat;
+    background-size: 100% 100%;
+  
+    .level-test-body {
+      text-align: center;
+  
+      .subtitle {
+        color: #2D2C28;
+      }
+
+      .button {
+        margin-top: 30px;
+        width: 370px;
+      }
+    }
+  }
+}

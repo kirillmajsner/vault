@@ -1,0 +1,73 @@
+.certificates-box {
+  padding-top: 15px;
+  padding-bottom: 40px;
+
+  .certificates-head {
+    text-align: center;
+    margin-bottom: 45px;
+
+    .subtitle {
+      padding: 0 20px;
+    }
+  }
+
+  .certificates-body {
+    .certificates {
+      .certificate {
+        margin: 0 45px 30px;
+
+        .image {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+        transition: 250ms, box-shadow 250ms ease-in-out;
+
+        &.active {
+          box-shadow: 50px 50px 56px 0 rgba(146, 143, 135, 0.3);
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .certificates-box {
+    padding-top: 30px;
+    padding-bottom: 100px;
+    margin-top: 80px;
+  
+    .certificates-head {
+      text-align: center;
+      margin-bottom: 85px;
+    }
+  
+    .certificates-body {
+      .certificates {
+  
+        .certificate {
+          margin: 0;
+
+          .image {
+            display: block;
+            width: 100%;
+            height: auto;
+          }
+  
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+          transition: 250ms, box-shadow 250ms ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .certificates-box {
+    background: url('../images/our-tricks-bg-rounds-2.svg') left center no-repeat;
+    background-size: 90%;
+  }
+}

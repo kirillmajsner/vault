@@ -1,0 +1,34 @@
+.img-block {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.inherited-link {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+.half-opacity {
+  opacity: 0.5;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.title {
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+@include desktop {
+
+}

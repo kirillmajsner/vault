@@ -1,0 +1,288 @@
+.schedule-box {
+  padding: 42px 0;
+
+  .schedule-head {
+    text-align: center;
+
+    .subtitle {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+
+  .courses-shedule {
+    .course {
+      .course-preview {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 20px 5px;
+
+        .logo {
+          display: block;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+
+          flex-grow: 0;
+          flex-shrink: 0;
+        }
+
+        .title {
+          font-size: 18px;
+
+          margin-left: 20px;
+
+          flex-grow: 1;
+          flex-shrink: 1;
+        }
+
+        .opening-arrow {
+          flex-grow: 0;
+          flex-shrink: 0;
+
+          &::after {
+            content: "";
+            display: block;
+            width: 16px;
+            height: 16px;
+
+            background: url("../images/opening-arrow.svg") center no-repeat;
+          }
+        }
+      }
+
+      .course-information {
+        display: none;
+        margin-bottom: 12px;
+
+        .course-info {
+          padding: 33px 10px 29px;
+
+          border-top: 1px solid #f3f0e7;
+
+          &:first-child {
+            border-top: 1px solid transparent;
+          }
+
+          .info {
+            display: flex;
+            color: #2d2c28;
+            font-size: 15px;
+            margin-bottom: 24px;
+
+            .annotate {
+              color: #83878f;
+              font-size: 15px;
+              flex: 0 0 100px;
+            }
+
+            .price {
+              font-weight: bold;
+            }
+
+            .timetable-info {
+              .duration {
+                font-weight: bold;
+                width: 100%;
+                display: inline-block;
+                margin-bottom: 5px;
+              }
+
+              .by-days {
+                color: #83878f;
+              }
+            }
+          }
+
+          &.annotation {
+            display: none;
+          }
+        }
+      }
+
+      border-top: 1px solid #f3f0e7;
+
+      &:first-child {
+        border-top: 1px solid transparent;
+      }
+
+      &.opened {
+        border-top: 1px solid transparent;
+
+        .preview-box {
+          box-shadow: 0 0 60px 0 #928f8752;
+        }
+
+        .opening-arrow {
+          transform: rotate(180deg);
+        }
+
+        .course-information {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .schedule-box {
+    padding: 0;
+    margin-bottom: 30px;
+
+    .schedule-head {
+    }
+
+    .courses-shedule {
+      padding-top: 13px;
+
+      .course {
+        .course-preview {
+          padding: 18px 10px;
+          cursor: pointer;
+
+          .logo {
+          }
+
+          .title {
+            font-size: 20px;
+          }
+
+          .opening-arrow {
+            &::after {
+            }
+          }
+        }
+
+        .course-information {
+          padding-top: 20px;
+          padding-bottom: 30px;
+
+          .course-info {
+            padding: 10px 0;
+
+            margin-left: 95px;
+            margin-right: 15px;
+
+            margin-top: 10px;
+
+            border-top: 1px solid #f3f0e7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &:not(.annotation) {
+              padding: 20px 0 0px;
+              margin-left: 95px;
+              margin-right: 15px;
+              margin-top: 1px;
+            }
+
+            .info {
+              display: flex;
+              color: #2d2c28;
+              font-size: 20px;
+              margin-bottom: 20px;
+
+              .annotate {
+                display: none;
+              }
+
+              .timetable-info {
+                .duration {
+                  font-weight: bold;
+                  width: 100%;
+                  display: inline-block;
+                  margin-bottom: 10px;
+                }
+
+                .by-days {
+                  color: #83878f;
+                }
+              }
+            }
+
+            &.annotation {
+              display: flex;
+              justify-content: space-between;
+
+              color: #83878f;
+              font-size: 15px;
+            }
+          }
+
+          .course-info:nth-child(-n + 2) {
+            border-top: 1px solid transparent;
+          }
+
+          .start {
+            flex: 1 1 194px;
+            order: 0;
+          }
+
+          .shedule {
+            flex: 1 1 259px;
+            order: 1;
+          }
+
+          .cost {
+            flex: 1 1 241px;
+            order: 2;
+          }
+
+          .commit {
+            flex: 0 0 196px;
+            order: 3;
+            align-self: baseline;
+          }
+        }
+
+        border-top: 1px solid transparent;
+
+        &:first-child {
+          border-top: 1px solid transparent;
+
+          .course-preview {
+            border-top: 1px solid transparent;
+          }
+        }
+
+        .course-information,
+        .preview-box {
+          margin: 0 70px;
+        }
+
+        .course-preview {
+          border-top: 1px solid #f3f0e7;
+        }
+
+        &.opened {
+          border-top: 1px solid transparent;
+
+          .course-preview {
+            border-top: 1px solid transparent;
+          }
+
+          .preview-box {
+            box-shadow: 0 0 60px 0 #928f8752;
+            border-radius: 15px;
+          }
+
+          .opening-arrow {
+            transform: rotate(180deg);
+          }
+
+          .course-information {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

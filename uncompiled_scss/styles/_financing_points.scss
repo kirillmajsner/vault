@@ -1,0 +1,76 @@
+.financing-points-box {
+  .financing-point {
+    margin-bottom: 52px;
+
+    .financing-point-image {
+      margin-bottom: 25px;
+
+      .fin-image {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .financing-point-text {
+      padding-left: 10px;
+      padding-right: 10px;
+
+      .title {
+        margin-top: 0;
+        margin-bottom: 10px;
+
+        color: #282A2D;
+        font-size: 30px;
+      }
+
+      .text {
+        margin-top: 0;
+        margin-bottom: 10px;
+
+        color: #83878F;
+        font-size: 18px;
+        line-height: 1.4;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .financing-points-box {
+    .financing-point {
+      margin-bottom: 45px;
+  
+      .financing-point-image {
+        margin-bottom: 25px;
+  
+        .fin-image {
+          display: block;
+          width: 80%;
+        }
+      }
+  
+      .financing-point-text {
+        margin-top: 15px;
+        padding-left: 0;
+        padding-right: 20%;
+  
+        .title {
+          margin-top: 0;
+          margin-bottom: 10px;
+  
+          color: #282A2D;
+          font-size: 50px;
+        }
+  
+        .text {
+          margin-top: 0;
+          margin-bottom: 10px;
+  
+          color: #83878F;
+          font-size: 20px;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+}

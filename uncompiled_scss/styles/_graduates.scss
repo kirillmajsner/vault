@@ -1,0 +1,261 @@
+.graduates-box {
+  padding-top: 78px;
+  padding-bottom: 60px;
+  margin-bottom: 15px;
+
+  background: url("../images/about-us-center-bg.png") left center no-repeat;
+  background-size: auto 100%;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .graduates-body {
+    .graduates {
+      display: flex;
+
+      .graduate {
+        flex: 0 0 auto;
+        width: 100%;
+
+        .graduate-image-box {
+          text-align: center;
+
+          .image {
+            display: inline-block;
+            width: 92px;
+            height: auto;
+            border-radius: 50%;
+          }
+        }
+
+        .graduate-feedback-box {
+          padding-top: 15px;
+          text-align: center;
+
+          .course {
+            color: #928f87;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: bold;
+            display: inline-block;
+
+            margin-top: 0;
+            margin-bottom: 13px;
+          }
+
+          .name {
+            color: #282a2d;
+            font-size: 30px;
+
+            margin-top: 0;
+            margin-bottom: 6px;
+          }
+
+          .text {
+            color: #282a2d;
+            font-size: 18px;
+
+            margin-top: 0;
+            margin-bottom: 18px;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+
+    .graduates-controls {
+      .controller {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+
+        width: 100%;
+
+        .control {
+          display: block;
+          position: relative;
+
+          background-size: contain;
+          background-position: center;
+
+          padding: 6px;
+          border: 1px solid transparent;
+          border-radius: 50%;
+          margin-right: auto;
+
+          margin-right: 4px;
+
+          .control-image {
+            display: block;
+            width: 50px;
+            height: 50px;
+
+            border-radius: 50%;
+
+            background-position: center;
+            background-size: contain;
+          }
+
+          &.active,
+          &:hover {
+            border: 1px solid #ffdb60;
+
+            .control-image {
+              background-position: center;
+              background-size: contain;
+
+              &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                background: rgba(255, 218, 96, 0.8);
+
+                top: 6px;
+                bottom: 6px;
+                right: 6px;
+                left: 6px;
+                border-radius: 50%;
+                padding: 6px;
+              } 
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .graduates-box {
+    padding-top: 138px;
+    padding-bottom: 123px;
+    margin-bottom: -10px;
+  
+    background: url("../images/about-us-center-bg.png") left center no-repeat;
+    background-size: 100% 100%;
+  
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .graduates-body {
+      .graduates {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+  
+        .graduate {
+          flex: 0 0 auto;
+          width: 100%;
+          margin-right: 20%;
+  
+          .graduate-image-box {
+            text-align: center;
+            padding-top: 25px;
+  
+            .image {
+              display: inline-block;
+              width: 100%;
+              height: auto;
+              border-radius: 50%;
+            }
+          }
+  
+          .graduate-feedback-box {
+            padding-top: 20px;
+            text-align: left;
+            padding-left: 30px;
+            padding-right: 100px;
+            padding-bottom: 100px;
+  
+            .course {
+              margin-top: 0;
+              margin-bottom: 5px;
+            }
+  
+            .name {
+              font-size: 50px;
+  
+              margin-top: 0;
+              margin-bottom: 15px;
+            }
+  
+            .text {
+              font-size: 20px;
+  
+              margin-top: 0;
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+  
+      .graduates-controls {
+        padding-left: 20px;
+        position: relative;
+
+        .controller {
+          display: flex;
+          flex-wrap: nowrap;
+          overflow-x: auto;
+  
+          position: absolute;
+          top: -100px;
+          
+          width: 100%;
+  
+          .control {
+
+            display: block;
+            position: relative;
+  
+            background-size: contain;
+            background-position: center;
+  
+            padding: 10px;
+            border: 1px solid transparent;
+            border-radius: 50%;
+            margin-right: 8px;
+  
+            .control-image {
+              display: block;
+              width: 70px;
+              height: 70px;
+  
+              border-radius: 50%;
+  
+              background-position: center;
+              background-size: contain;
+            }
+  
+            &.active,
+            &:hover {
+              border: 1px solid #ffdb60;
+  
+              .control-image {
+                background-position: center;
+                background-size: contain;
+  
+                &::after {
+                  content: '';
+                  display: block;
+                  position: absolute;
+                  background: rgba(255, 218, 96, 0.8);
+  
+                  top: 10px;
+                  bottom: 10px;
+                  right: 10px;
+                  left: 10px;
+                  border-radius: 50%;
+                  padding: 6px;
+                } 
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

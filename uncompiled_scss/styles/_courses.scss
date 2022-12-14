@@ -1,0 +1,135 @@
+.courses {
+  margin-bottom: 10px;
+
+  .courses-body {
+    padding-top: 15px;
+  }
+
+  .course {
+    padding: 46px 20px 35px; 
+    margin-top: 46px;
+    margin-bottom: 29px;
+
+    border: 1px solid #f6f4ef;
+    border-radius: 15px;
+
+    text-align: center;
+
+    position: relative;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 60px 0 #928f8752;
+    }
+
+    .logo {
+      position: absolute;
+      display: block;
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      top: -46px;
+      right: calc(50% - 46px);
+    }
+
+    .title {
+      font-size: 20px;
+    }
+
+    .description {
+      display: none;
+    }
+
+    .course-info {
+      display: flex;
+      justify-content: space-evenly;
+
+      padding-top: 12px;
+      padding-bottom: 13px;
+
+      .info {
+        text-align: center;
+        font-size: 15px;
+
+        .of {
+          font-weight: 100;
+          margin: 8px 0 0;
+          font-size: 15px;
+        }
+
+        .is {
+          font-weight: bold;
+        }
+
+        &::before {
+          width: 30px;
+          height: 30px;
+          content: '';
+  
+          left: 0px;
+          display: inline-block;
+        }
+  
+
+        &.launch::before {
+          background: url("../images/black-rocket.svg") center no-repeat;
+        }
+
+        &.term::before {
+          background: url("../images/black-term.svg") center no-repeat;
+        }
+      }
+    }
+
+    .button-place {
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+
+      > * {
+        flex-basis: 196px;
+      }
+    }
+
+    .price-place {
+      padding: 6px;
+
+      .price {
+        color: #282a2d;
+        font-size: 20px;
+
+        .amount {
+          font-size: 25px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .courses {
+    padding-top: 100px;
+    background: url('../images/number-77-logo.svg') top center no-repeat;
+
+    .course {
+      background: white;
+
+      .description {
+        display: inline-block;
+        color: #83878F;
+        font-size: 15px;
+        line-height: 1.6;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
